@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'react';
+import React, { Suspense } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { Button } from "@/components/ui/button";
@@ -88,7 +88,7 @@ export default function Navbar() {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
-
+                <Suspense>
             {isLoggedIn ? (
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -119,6 +119,7 @@ export default function Navbar() {
                 </Link>
               </Button>
             )}
+            </Suspense>
             
             <ModeToggle />
           </div>
