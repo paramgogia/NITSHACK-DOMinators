@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# RiskRadar: Disaster Monitoring and Alert System
+
+## About
+RiskRadar is a comprehensive solution designed to provide real-time information and alerts during natural disasters. It leverages modern technologies like AI and data visualization to offer timely, accurate updates, and disaster predictions.
+
+The key features of RiskRadar include:
+
+- **Live Disaster News Updates**: Aggregates and displays real-time news and information about ongoing natural disasters from various authoritative sources.
+- **Customizable Alert System**: Allows users to set up personalized alerts via channels like WhatsApp and SMS, ensuring they receive critical updates promptly.
+- **AI-based Prediction and Risk Analysis**: Utilizes machine learning models to analyze data and provide forecasts about the severity, impact, and risk of natural disasters.
+- **Donation Platform**: Integrates a platform for users to easily donate to relief efforts and support victims of natural disasters.
+- **AI-powered Chatbot**: Provides an intuitive conversational interface for users to access disaster-related information and resources.
+- **Multilingual Support**: Ensures the system is accessible to a wide range of users by supporting multiple languages.
+
+## Technology Stack
+RiskRadar is built using the following technologies:
+
+- **Frontend**: Next.js
+- **Backend**: Node.js
+- **Database**: MongoDB
+- **Styling**: Tailwind CSS
+- **Data Sources**: OpenWeather API, Leaflet
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/riskradar.git
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. Navigate to the client directory:
+   ```
+   cd riskradar/client
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Install dependencies:
+   ```
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+4. Start the development server:
+   ```
+   npm run dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. The RiskRadar application will be accessible at `http://localhost:3000`.
