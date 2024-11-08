@@ -1,4 +1,4 @@
-// File: C:\NITSHack-DOMinators\client\src\app\page.js
+// File: C:\NITSHACK-DOMinators\client\src\app\page.js
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

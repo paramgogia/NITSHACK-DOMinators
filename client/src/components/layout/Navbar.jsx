@@ -25,8 +25,8 @@ const languageOptions = [
 export default function Navbar() {
   const [selectedLanguage, setSelectedLanguage] = useState(languageOptions[0]);
   const { user, logout } = useAuth();
-  const searchParams = useSearchParams();
-  const isLoggedIn = searchParams.get('isLogin') === 'true';
+  //const searchParams = useSearchParams();
+ // const isLoggedIn = searchParams.get('isLogin') === 'true';
 
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);
@@ -36,7 +36,7 @@ export default function Navbar() {
   const handleLogout = () => {
     logout();
     // You might want to redirect to home page after logout
-    window.location.href = '/?isLogin=false';
+   // window.location.href = '/?isLogin=false';
   };
 
   return (
@@ -89,7 +89,7 @@ export default function Navbar() {
               </DropdownMenuContent>
             </DropdownMenu>
                 <Suspense>
-            {isLoggedIn ? (
+            {/* {isLoggedIn ? ( */}
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="ghost" size="icon" className="rounded-full">
@@ -107,18 +107,18 @@ export default function Navbar() {
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
-            ) : (
+            {/* ) : (
               <Button asChild>
                 <Link 
                   href={{
                     pathname: '/login',
-                    query: { isLogin: false }
+                  
                   }}
                 >
                   Login
                 </Link>
               </Button>
-            )}
+            )} */}
             </Suspense>
             
             <ModeToggle />
